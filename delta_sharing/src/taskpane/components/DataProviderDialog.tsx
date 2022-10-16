@@ -46,9 +46,9 @@ export const DataProviderDialog: React.FunctionComponent = () => {
         <h2 className="ms-font-l ms-fontWeight-semilight ms-fontColor-neutralPrimary ms-u-slideUpIn20">
           Provider Endpoint URL
         </h2>
-        <input type="text" placeholder="https://some/url/" />
+        <input className="ms-TextField-field" type="text" value="" placeholder="https://some/url/" />
         <h2 className="ms-font-l ms-fontWeight-semilight ms-fontColor-neutralPrimary ms-u-slideUpIn20">Token</h2>
-        <input type="text" placeholder="dapi1234567890" />
+        <input className="ms-TextField-field" type="text" value="" placeholder="dapi1234567890" />
         <DialogFooter>
           <PrimaryButton onClick={toggleHideDialog} text="Update" />
           <DefaultButton onClick={toggleHideDialog} text="Cancel" />

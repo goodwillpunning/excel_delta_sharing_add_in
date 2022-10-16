@@ -72,7 +72,7 @@ export default class App extends React.Component<AppProps, AppState> {
       return (
         <Progress
           title={title}
-          logo={require("./../../../assets/logo-filled.png")}
+          logo={require("./../../../assets/delta_sharing_logo_filled.png")}
           message="Please sideload your addin to see app body."
         />
       );
@@ -80,7 +80,11 @@ export default class App extends React.Component<AppProps, AppState> {
 
     return (
       <div className="ms-welcome">
-        <Header logo={require("./../../../assets/logo-filled.png")} title={this.props.title} message="Delta Sharing" />
+        <Header
+          logo={require("./../../../assets/delta_sharing_logo_filled.png")}
+          title={this.props.title}
+          message="Delta Sharing"
+        />
         <DataProviderDialog />
         <HeroList message="Discover shared datasets" items={this.state.listItems}></HeroList>
         <DefaultButton className="ms-welcome__action" iconProps={{ iconName: "ChevronRight" }} onClick={this.click}>

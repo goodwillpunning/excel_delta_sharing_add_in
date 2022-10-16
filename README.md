@@ -13,5 +13,6 @@ To run the add-in locally, change working directories to the `delta_sharing` dir
 ```bash
 git clone https://github.com/goodwillpunning/excel_delta_sharing_add_in.git
 cd excel_delta_sharing_add_in/delta_sharing
+npm install
 npm start
 ```
