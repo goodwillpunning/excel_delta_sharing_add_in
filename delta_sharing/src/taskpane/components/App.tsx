@@ -3,6 +3,7 @@ import { DefaultButton } from "@fluentui/react";
 import Header from "./Header";
 import HeroList, { HeroListItem } from "./HeroList";
 import Progress from "./Progress";
+import { DataProviderDialog } from "./DataProviderDialog";
 
 /* global console, Excel, require  */
 
@@ -80,10 +81,7 @@ export default class App extends React.Component<AppProps, AppState> {
     return (
       <div className="ms-welcome">
         <Header logo={require("./../../../assets/logo-filled.png")} title={this.props.title} message="Delta Sharing" />
-        <p className="ms-font-l">Enter the data provider details.</p>
-        <DefaultButton className="ms-welcome__action" iconProps={{ iconName: "ChevronRight" }} onClick={this.click}>
-          Connect to a Data Provider
-        </DefaultButton>
+        <DataProviderDialog />
         <HeroList message="Discover shared datasets" items={this.state.listItems}></HeroList>
         <DefaultButton className="ms-welcome__action" iconProps={{ iconName: "ChevronRight" }} onClick={this.click}>
           Insert into Sheet
